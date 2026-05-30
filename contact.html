@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="noir">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply | The Soft Command</title>
+  <meta name="description" content="Apply to serve The Soft Command. Read the rules, introduce yourself, and request access respectfully.">
+  <meta name="theme-color" content="#080808">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <!-- Global Navigation -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo nav-logo--wordmark" aria-label="Goddess Selina, The Soft Command">
+        <span class="nav-name cormorant gold-gradient-text">Goddess Selina</span>
+        <span class="nav-motto cinzel">Your new obsession.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home" class="cinzel nav-link">Home</a></li>
+        <li><a href="rules.html" data-i18n="nav_rules" class="cinzel nav-link">Rules</a></li>
+        <li><a href="services.html" data-i18n="nav_services" class="cinzel nav-link">Services</a></li>
+        <li><a href="tributes.html" data-i18n="nav_tributes" class="cinzel nav-link">Tributes</a></li>
+        <li><a href="gallery.html" data-i18n="nav_gallery" class="cinzel nav-link">Gallery</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact" class="cinzel nav-link nav-link--cta">Apply</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="lang-selector" id="lang-selector">
+          <button class="lang-btn cinzel" id="lang-toggle-btn">EN ▾</button>
+          <div class="lang-dropdown" id="lang-dropdown" hidden>
+            <button data-lang="en" class="cinzel">EN</button>
+            <button data-lang="fr" class="cinzel">FR</button>
+            <button data-lang="de" class="cinzel">DE</button>
+            <button data-lang="es" class="cinzel">ES</button>
+          </div>
+        </div>
+        <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle theme"><span class="theme-icon">◑</span></button>
+        <button id="hamburger" class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <button class="mobile-menu__close" id="mobile-close">✕</button>
+    <nav class="mobile-menu__nav">
+      <a href="index.html" data-i18n="nav_home" class="cinzel mobile-link">Home</a>
+      <a href="rules.html" data-i18n="nav_rules" class="cinzel mobile-link">Rules</a>
+      <a href="services.html" data-i18n="nav_services" class="cinzel mobile-link">Services</a>
+      <a href="tributes.html" data-i18n="nav_tributes" class="cinzel mobile-link">Tributes</a>
+      <a href="gallery.html" data-i18n="nav_gallery" class="cinzel mobile-link">Gallery</a>
+      <a href="contact.html" data-i18n="nav_contact" class="cinzel mobile-link mobile-link--cta">Apply</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <p class="cinzel gold-gradient-text" data-i18n="footer_tagline">Obey gently.</p>
+    </div>
+  </div>
+
+  <main class="contact-page">
+    <section class="hero hero--small">
+      <p class="section-eyebrow cinzel gold-gradient-text" data-i18n="contact_eyebrow">Seek Access</p>
+      <h1 class="page-title cormorant gold-gradient-text" data-i18n="contact_title">Apply to Serve</h1>
+      <p class="page-sub jost">Make your introduction with care. Access is considered, not assumed.</p>
+    </section>
+
+    <section class="rules-gate" id="rules-gate">
+      <div class="rules-gate__inner reveal">
+        <p class="cinzel gold-gradient-text">Before You Apply</p>
+        <h2 class="cormorant">The rules come first.</h2>
+        <p class="jost">Applications are considered only after the access standard is reviewed: consent, discretion, composure, privacy, and boundaries.</p>
+        <div class="rules-gate__btns">
+          <a href="rules.html" class="btn btn--ghost cinzel">Read Rules</a>
+          <button class="btn btn--primary cinzel" id="confirm-rules-read" type="button">I Have Read Them</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section" id="contact-form-section" hidden>
+      <div class="contact-layout">
+        <div class="form-wrapper reveal">
+          <div class="form-header">
+            <div class="ornament-line"></div>
+            <p class="cinzel gold-gradient-text form-header__sub">Your Introduction</p>
+            <div class="ornament-line"></div>
+          </div>
+
+          <form class="application-form" id="application-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="field-name" class="cinzel form-label">Name or Alias *</label>
+                <input type="text" id="field-name" name="name" required class="form-input jost" placeholder="How should Selina address you?">
+              </div>
+
+              <div class="form-group">
+                <label for="field-handle" class="cinzel form-label">Social Handle</label>
+                <input type="text" id="field-handle" name="handle" class="form-input jost" placeholder="@yourhandle and platform">
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="field-interest" class="cinzel form-label">Interest *</label>
+                <select id="field-interest" name="interest" required class="form-select cinzel">
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="voice-note">Voice Note</option>
+                  <option value="custom-photo">Custom Photos</option>
+                  <option value="custom-video">Custom Videos</option>
+                  <option value="gm-gn">GM / GN Messages</option>
+                  <option value="tasks">Tasks & Accountability</option>
+                  <option value="live-call">Live Call</option>
+                  <option value="training">Training / Dynamic</option>
+                  <option value="tribute">Tribute Only</option>
+                  <option value="custom">Custom Request</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="field-experience" class="cinzel form-label">Experience</label>
+                <select id="field-experience" name="experience" class="form-select cinzel">
+                  <option value="" disabled selected>Select one</option>
+                  <option value="new">New / No experience</option>
+                  <option value="curious">Curious and learning</option>
+                  <option value="some">Some experience</option>
+                  <option value="experienced">Experienced</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="field-intro" class="cinzel form-label">Introduction *</label>
+              <textarea id="field-intro" name="intro" required rows="6" class="form-textarea jost" placeholder="Tell me who you are, what you seek, and why you believe you belong in The Soft Command. Be genuine."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="field-tribute" class="cinzel form-label">Tribute Offering</label>
+              <select id="field-tribute" name="tribute" class="form-select cinzel">
+                <option value="">No tribute at this time</option>
+                <option value="coffee">Coffee Tribute - $10</option>
+                <option value="goodgirl">Good Girl Tribute - $25</option>
+                <option value="goddess">Goddess Tribute - $50</option>
+                <option value="devotion">Devotion Tribute - $100+</option>
+              </select>
+            </div>
+
+            <div class="form-group form-group--checkbox">
+              <label class="checkbox-label jost">
+                <input type="checkbox" id="field-rules-agree" name="rulesAgree" required>
+                <span>I have read, understood, and agree to the <a href="rules.html" class="gold-gradient-text">Rules of Engagement</a>.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full cinzel" id="submit-btn">Submit Application</button>
+            <p class="form-note jost">This demo stores no message and sends no email yet. Connect a Formspree endpoint when you are ready to receive applications.</p>
+          </form>
+
+          <div class="form-success" id="form-success" hidden>
+            <div class="success-ornament">SC</div>
+            <h3 class="cormorant gold-gradient-text">Received.</h3>
+            <p class="jost">Your introduction has been noted. Applications are reviewed selectively.</p>
+          </div>
+        </div>
+
+        <aside class="contact-side-card reveal">
+          <p class="cinzel gold-gradient-text">How To Be Considered</p>
+          <h2 class="cormorant">Quiet confidence. Clear intent. No entitlement.</h2>
+          <p class="jost">The strongest applications are specific, respectful, and composed. Lead with self-awareness, not performance.</p>
+          <ul class="contact-list jost">
+            <li><span class="cinzel">01</span> State what you want with precision.</li>
+            <li><span class="cinzel">02</span> Show that you understand boundaries.</li>
+            <li><span class="cinzel">03</span> Keep private details private.</li>
+          </ul>
+          <a href="https://www.instagram.com/the.soft.command/" target="_blank" rel="noopener" class="btn btn--ghost cinzel">Instagram</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-kicker cinzel">The Soft Command</p>
+        <p class="footer-logo cormorant gold-gradient-text">Goddess Selina</p>
+        <p class="footer-tagline jost">Your new obsession begins softly.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="rules.html" data-i18n="nav_rules" class="cinzel footer-link">Rules</a>
+        <a href="services.html" data-i18n="nav_services" class="cinzel footer-link">Services</a>
+        <a href="tributes.html" data-i18n="nav_tributes" class="cinzel footer-link">Tributes</a>
+        <a href="contact.html" data-i18n="nav_contact" class="cinzel footer-link">Apply</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/the.soft.command/" target="_blank" rel="noopener" class="social-link cinzel" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+          </svg>
+          <span>@the.soft.command</span>
+        </a>
+      </div>
+      <div class="footer-payments">
+        <span class="cinzel payment-label">Discreet tributes via</span>
+        <span class="payment-badge cinzel">PayPal</span>
+        <span class="payment-badge cinzel">CashApp</span>
+        <span class="payment-badge cinzel">Venmo</span>
+      </div>
+      <a href="contact.html" class="btn btn--ghost cinzel footer-cta">Apply With Respect</a>
+      <p class="footer-copy jost">© 2025 The Soft Command. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <svg id="marble-veins" class="marble-veins" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <style>body.marble-bg #marble-veins { display: block !important; }</style>
+  </svg>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="noir">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tributes | The Soft Command</title>
+  <meta name="description" content="Tributes for The Soft Command. Choose a devotion offering and apply with respect.">
+  <meta name="theme-color" content="#080808">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <!-- Global Navigation -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo nav-logo--wordmark" aria-label="Goddess Selina, The Soft Command">
+        <span class="nav-name cormorant gold-gradient-text">Goddess Selina</span>
+        <span class="nav-motto cinzel">Your new obsession.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home" class="cinzel nav-link">Home</a></li>
+        <li><a href="rules.html" data-i18n="nav_rules" class="cinzel nav-link">Rules</a></li>
+        <li><a href="services.html" data-i18n="nav_services" class="cinzel nav-link">Services</a></li>
+        <li><a href="tributes.html" data-i18n="nav_tributes" class="cinzel nav-link">Tributes</a></li>
+        <li><a href="gallery.html" data-i18n="nav_gallery" class="cinzel nav-link">Gallery</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact" class="cinzel nav-link nav-link--cta">Apply</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="lang-selector" id="lang-selector">
+          <button class="lang-btn cinzel" id="lang-toggle-btn">EN ▾</button>
+          <div class="lang-dropdown" id="lang-dropdown" hidden>
+            <button data-lang="en" class="cinzel">EN</button>
+            <button data-lang="fr" class="cinzel">FR</button>
+            <button data-lang="de" class="cinzel">DE</button>
+            <button data-lang="es" class="cinzel">ES</button>
+          </div>
+        </div>
+        <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle theme"><span class="theme-icon">◑</span></button>
+        <button id="hamburger" class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <button class="mobile-menu__close" id="mobile-close">✕</button>
+    <nav class="mobile-menu__nav">
+      <a href="index.html" data-i18n="nav_home" class="cinzel mobile-link">Home</a>
+      <a href="rules.html" data-i18n="nav_rules" class="cinzel mobile-link">Rules</a>
+      <a href="services.html" data-i18n="nav_services" class="cinzel mobile-link">Services</a>
+      <a href="tributes.html" data-i18n="nav_tributes" class="cinzel mobile-link">Tributes</a>
+      <a href="gallery.html" data-i18n="nav_gallery" class="cinzel mobile-link">Gallery</a>
+      <a href="contact.html" data-i18n="nav_contact" class="cinzel mobile-link mobile-link--cta">Apply</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <p class="cinzel gold-gradient-text" data-i18n="footer_tagline">Obey gently.</p>
+    </div>
+  </div>
+
+  <main class="tributes-page">
+    <section class="hero hero--small">
+      <p class="section-eyebrow cinzel gold-gradient-text" data-i18n="tributes_eyebrow">Show Devotion</p>
+      <h1 class="page-title cormorant gold-gradient-text" data-i18n="tributes_title">Tributes</h1>
+      <p class="page-sub jost">Devotion expressed through generosity. Choose the signal you want to send.</p>
+    </section>
+
+    <section class="menu-section tributes-section">
+      <div class="menu-intro reveal tributes-intro">
+        <p class="jost">
+          Tributes are expressions of devotion, respect, and submission. 
+          They do not guarantee services, responses, or ownership.
+        </p>
+      </div>
+
+      <div class="tribute-ritual reveal">
+        <figure class="tribute-ritual__art">
+          <img src="Images/Showcase/selina-devotion-orb.webp" alt="Goddess Selina holding a glowing devotion emblem" width="900" height="900" loading="lazy" decoding="async">
+        </figure>
+        <div class="tribute-ritual__copy">
+          <p class="editorial-kicker cinzel">The Signal</p>
+          <h2 class="tribute-ritual__title cormorant gold-gradient-text">Devotion should feel intentional.</h2>
+          <p class="jost">A tribute is not a shortcut. It is a composed gesture: quiet, generous, and clear enough to be noticed.</p>
+        </div>
+      </div>
+
+      <div class="tribute-grid stagger-children">
+        <!-- Coffee Tribute -->
+        <article class="tribute-card">
+          <div class="tribute-card__emoji">☕</div>
+          <h3 class="tribute-card__title cinzel">Coffee Tribute</h3>
+          <p class="tribute-card__desc jost">A quiet token of appreciation. The beginning of proper attention.</p>
+          <p class="tribute-card__price">$10</p>
+          <a href="contact.html?tribute=coffee" class="btn btn--ghost cinzel tribute-card__cta">Offer This</a>
+        </article>
+
+        <!-- Good Girl Tribute -->
+        <article class="tribute-card">
+          <div class="tribute-card__emoji">🖤</div>
+          <h3 class="tribute-card__title cinzel">Good Girl Tribute</h3>
+          <p class="tribute-card__desc jost">A composed gesture of service, respect, and soft devotion.</p>
+          <p class="tribute-card__price">$25</p>
+          <a href="contact.html?tribute=goodgirl" class="btn btn--ghost cinzel tribute-card__cta">Offer This</a>
+        </article>
+
+        <!-- Goddess Tribute -->
+        <article class="tribute-card tribute-card--featured">
+          <div class="tribute-card__badge cinzel">Most Chosen</div>
+          <div class="tribute-card__emoji">👑</div>
+          <h3 class="tribute-card__title cinzel">Goddess Tribute</h3>
+          <p class="tribute-card__desc jost">A clear signal that you understand the value of attention.</p>
+          <p class="tribute-card__price">$50</p>
+          <a href="contact.html?tribute=goddess" class="btn btn--primary cinzel tribute-card__cta">Offer This</a>
+        </article>
+
+        <!-- Devotion Tribute -->
+        <article class="tribute-card">
+          <div class="tribute-card__emoji">🌹</div>
+          <h3 class="tribute-card__title cinzel">Devotion Tribute</h3>
+          <p class="tribute-card__desc jost">Reserved for the truly deliberate. The strongest expression of surrender.</p>
+          <p class="tribute-card__price">$100+</p>
+          <a href="contact.html?tribute=devotion" class="btn btn--ghost cinzel tribute-card__cta">Offer This</a>
+        </article>
+      </div>
+
+      <div class="menu-disclaimer reveal">
+        <p>Payment does not guarantee unlimited access, ownership, exclusivity, or instant responses.</p>
+        <p>Respectful communication is expected at all times.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-kicker cinzel">The Soft Command</p>
+        <p class="footer-logo cormorant gold-gradient-text">Goddess Selina</p>
+        <p class="footer-tagline jost">Your new obsession begins softly.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="rules.html" data-i18n="nav_rules" class="cinzel footer-link">Rules</a>
+        <a href="services.html" data-i18n="nav_services" class="cinzel footer-link">Services</a>
+        <a href="tributes.html" data-i18n="nav_tributes" class="cinzel footer-link">Tributes</a>
+        <a href="contact.html" data-i18n="nav_contact" class="cinzel footer-link">Apply</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/the.soft.command/" target="_blank" rel="noopener" class="social-link cinzel" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+          </svg>
+          <span>@the.soft.command</span>
+        </a>
+      </div>
+      <div class="footer-payments">
+        <span class="cinzel payment-label">Discreet tributes via</span>
+        <span class="payment-badge cinzel">PayPal</span>
+        <span class="payment-badge cinzel">CashApp</span>
+        <span class="payment-badge cinzel">Venmo</span>
+      </div>
+      <a href="contact.html" class="btn btn--ghost cinzel footer-cta">Apply With Respect</a>
+      <p class="footer-copy jost">© 2025 The Soft Command. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <svg id="marble-veins" class="marble-veins" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <style>body.marble-bg #marble-veins { display: block !important; }</style>
+  </svg>
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="noir">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rules of Engagement | The Soft Command</title>
+  <meta name="description" content="Rules of Engagement for The Soft Command: consent, discretion, structure, and self-control.">
+  <meta name="theme-color" content="#080808">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <!-- Global Navigation -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo nav-logo--wordmark" aria-label="Goddess Selina, The Soft Command">
+        <span class="nav-name cormorant gold-gradient-text">Goddess Selina</span>
+        <span class="nav-motto cinzel">Your new obsession.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home" class="cinzel nav-link">Home</a></li>
+        <li><a href="rules.html" data-i18n="nav_rules" class="cinzel nav-link">Rules</a></li>
+        <li><a href="services.html" data-i18n="nav_services" class="cinzel nav-link">Services</a></li>
+        <li><a href="tributes.html" data-i18n="nav_tributes" class="cinzel nav-link">Tributes</a></li>
+        <li><a href="gallery.html" data-i18n="nav_gallery" class="cinzel nav-link">Gallery</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact" class="cinzel nav-link nav-link--cta">Apply</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="lang-selector" id="lang-selector">
+          <button class="lang-btn cinzel" id="lang-toggle-btn">EN ▾</button>
+          <div class="lang-dropdown" id="lang-dropdown" hidden>
+            <button data-lang="en" class="cinzel">EN</button>
+            <button data-lang="fr" class="cinzel">FR</button>
+            <button data-lang="de" class="cinzel">DE</button>
+            <button data-lang="es" class="cinzel">ES</button>
+          </div>
+        </div>
+
+        <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle theme">
+          <span class="theme-icon">◑</span>
+        </button>
+
+        <button id="hamburger" class="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <button class="mobile-menu__close" id="mobile-close">✕</button>
+    <nav class="mobile-menu__nav">
+      <a href="index.html" data-i18n="nav_home" class="cinzel mobile-link">Home</a>
+      <a href="rules.html" data-i18n="nav_rules" class="cinzel mobile-link">Rules</a>
+      <a href="services.html" data-i18n="nav_services" class="cinzel mobile-link">Services</a>
+      <a href="tributes.html" data-i18n="nav_tributes" class="cinzel mobile-link">Tributes</a>
+      <a href="gallery.html" data-i18n="nav_gallery" class="cinzel mobile-link">Gallery</a>
+      <a href="contact.html" data-i18n="nav_contact" class="cinzel mobile-link mobile-link--cta">Apply</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <p class="cinzel gold-gradient-text" data-i18n="footer_tagline">Obey gently.</p>
+    </div>
+  </div>
+
+  <main class="rules-page">
+    <section class="hero hero--small reveal">
+      <p class="section-eyebrow cinzel gold-gradient-text" data-i18n="rules_eyebrow">Before You Proceed</p>
+      <h1 class="page-title cormorant gold-gradient-text" data-i18n="rules_title">Rules of Engagement</h1>
+      <p class="page-sub jost">A private access standard for boundaries, discretion, and respectful applications.</p>
+    </section>
+
+    <!-- Slide Carousel -->
+    <section class="rules-carousel">
+      <!-- Slides Wrapper -->
+      <div class="slides-viewport">
+      <div class="slides-wrapper" id="slides-wrapper">
+        
+        <!-- SLIDE 1 -->
+        <article class="rule-slide active" data-slide="1">
+          <div class="rule-slide__ornament">
+            <div class="ornament-border ornament-border--top"></div>
+          </div>
+          <div class="rule-slide__content">
+            <p class="slide-eyebrow cinzel gold-gradient-text">Slide 1 of 3</p>
+            <h2 class="slide-title cormorant gold-gradient-text">The Standard</h2>
+            <p class="slide-tagline cinzel">Review the access standard before applying.</p>
+            
+            <div class="illustration-circle">
+              <img src="Images/Logo/logo-no-text.png" alt="Goddess Selina" class="slide-illustration slide-illustration--emblem"/>
+            </div>
+            
+            <p class="slide-sub cinzel">Access is built on:</p>
+            
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <circle cx="14" cy="14" r="12" stroke="#D4AF37" stroke-width="1"/>
+                    <path d="M8,14 Q10,12 12,14 T16,14 Q18,12 20,14" stroke="#D4AF37" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <p class="pillar-label cinzel">Respect</p>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <circle cx="14" cy="14" r="12" stroke="#D4AF37" stroke-width="1"/>
+                    <path d="M7,19 L10,10 L14,15 L18,10 L21,19 Z" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
+                  </svg>
+                </div>
+                <p class="pillar-label cinzel">Consent</p>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <circle cx="14" cy="14" r="12" stroke="#D4AF37" stroke-width="1"/>
+                    <rect x="9" y="13" width="10" height="8" rx="1" stroke="#D4AF37" stroke-width="1.2"/>
+                    <path d="M10,13 V10 a4 4 0 0 1 8 0 V13" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
+                  </svg>
+                </div>
+                <p class="pillar-label cinzel">Discretion</p>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <circle cx="14" cy="14" r="12" stroke="#D4AF37" stroke-width="1"/>
+                    <ellipse cx="14" cy="19" rx="5" ry="1.5" stroke="#D4AF37" stroke-width="1"/>
+                    <path d="M11,19 L11,14 Q14,10 17,14 L17,19" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
+                    <circle cx="14" cy="10" r="2" stroke="#D4AF37" stroke-width="1"/>
+                  </svg>
+                </div>
+                <p class="pillar-label cinzel">Structure</p>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <circle cx="14" cy="14" r="12" stroke="#D4AF37" stroke-width="1"/>
+                    <path d="M14,7 L21,14 L14,21 L7,14 Z" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
+                  </svg>
+                </div>
+                <p class="pillar-label cinzel">Self-Control</p>
+              </div>
+            </div>
+            
+            <p class="slide-footer-text cinzel gold-gradient-text">These standards decide who is allowed closer.</p>
+          </div>
+          <div class="ornament-border ornament-border--bottom"></div>
+        </article>
+        
+        <!-- SLIDE 2 -->
+        <article class="rule-slide" data-slide="2">
+          <div class="rule-slide__content">
+            <p class="slide-eyebrow cinzel gold-gradient-text">Slide 2 of 3</p>
+            <h2 class="slide-title cormorant gold-gradient-text">Expectations & Boundaries</h2>
+            
+            <div class="slide-content-split">
+              <div class="rules-list">
+                
+                <div class="rules-block">
+                  <div class="rules-block__icon">
+                    <div class="icon-circle">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M3,7 L10,10 L17,7 L10,13 Z" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="rules-block__heading cinzel">Application Conduct</p>
+                    <p class="rules-block__text jost">Applications are reviewed for manners, patience, clarity, and self-awareness.</p>
+                  </div>
+                </div>
+                
+                <div class="rules-block">
+                  <div class="rules-block__icon">
+                    <div class="icon-circle icon-circle--x">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <line x1="3" y1="3" x2="13" y2="13" stroke="#D4AF37" stroke-width="1.5"/>
+                        <line x1="13" y1="3" x2="3" y2="13" stroke="#D4AF37" stroke-width="1.5"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="rules-block__heading cinzel">Restricted Behavior</p>
+                    <ul class="rules-list-items jost">
+                      <li>Repeated messages</li>
+                      <li>Demands for immediate attention</li>
+                      <li>Push boundaries</li>
+                      <li>Entitlement to time or access</li>
+                      <li>Manipulation, pressure, or guilt tactics</li>
+                    </ul>
+                    <p class="rules-block__warning cinzel">Disrespect ends consideration.</p>
+                  </div>
+                </div>
+                
+                <div class="rules-block">
+                  <div class="rules-block__icon">
+                    <div class="icon-circle">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4,18 L8,8 L10,12 L12,8 L16,18 Z" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="rules-block__heading cinzel">Access Signals</p>
+                    <ul class="rules-list-items jost">
+                      <li>Consistency</li>
+                      <li>Composure</li>
+                      <li>Considered effort</li>
+                      <li>Self-control</li>
+                    </ul>
+                    <p class="rules-block__not cinzel">Arrogance, desperation, and performance are not access signals.</p>
+                  </div>
+                </div>
+                
+                <div class="rules-block">
+                  <div class="rules-block__icon">
+                    <div class="icon-circle">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10,2 C10,2 4,7 4,12 a6 6 0 0 0 12 0 C16,7 10,2 10,2 Z" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="rules-block__heading cinzel">Consent & Boundaries</p>
+                    <p class="rules-block__text jost">All interactions are consensual between adults. A boundary is final once stated.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="slide-illustration-aside">
+                <div class="illustration-circle illustration-circle--sm">
+                  <img src="Images/Logo/logo-no-text.png" alt="" class="slide-illustration slide-illustration--emblem" aria-hidden="true"/>
+                </div>
+              </div>
+            </div>
+            
+            <p class="slide-footer-text cinzel gold-gradient-text">
+              Respect. Consent. Boundaries.
+              <em class="cormorant">The conditions of access.</em>
+            </p>
+          </div>
+        </article>
+        
+        <!-- SLIDE 3 -->
+        <article class="rule-slide" data-slide="3">
+          <div class="rule-slide__content">
+            <p class="slide-eyebrow cinzel gold-gradient-text">Slide 3 of 3</p>
+            <h2 class="slide-title cormorant gold-gradient-text">Rules of Engagement</h2>
+            
+            <div class="slide-content-split">
+              <div class="rules-list">
+                
+                <div class="rules-block">
+                  <div class="icon-circle"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#D4AF37" stroke-width="1.2"/><path d="M10,6 L10,10 L13,12" stroke="#D4AF37" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                  <div>
+                    <p class="rules-block__heading cinzel">Availability</p>
+                    <ul class="rules-list-items jost">
+                      <li>Responses are not guaranteed instantly.</li>
+                      <li>Availability varies by schedule and fit.</li>
+                      <li>Requests for constant access reduce eligibility.</li>
+                    </ul>
+                    <p class="rules-block__note cormorant gold-gradient-text">Patience and restraint are part of the standard.</p>
+                  </div>
+                </div>
+                
+                <div class="rules-block">
+                  <div class="icon-circle"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="7" width="12" height="10" rx="1" stroke="#D4AF37" stroke-width="1.2"/><path d="M7,7 V6 a3 3 0 0 1 6 0 V7" stroke="#D4AF37" stroke-width="1.2" fill="none"/></svg></div>
+                  <div>
+                    <p class="rules-block__heading cinzel">Privacy & Discretion</p>
+                    <p class="rules-block__text jost">All communication and content are private unless explicit permission is given.</p>
+                    <ul class="rules-list-items jost">
+                      <li>No screenshots</li>
+                      <li>No reposting messages</li>
+                      <li>No sharing private content</li>
+                      <li>No attempting to find personal information</li>
+                      <li>No involving third parties</li>
+                    </ul>
+                    <p class="rules-block__note cormorant gold-gradient-text">Discretion is expected at all times.</p>
+                  </div>
+                </div>
+                
+                <div class="rules-block">
+                  <div class="icon-circle"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="8" r="3" stroke="#D4AF37" stroke-width="1.2"/><path d="M5,17 Q7,13 10,13 T15,17" stroke="#D4AF37" stroke-width="1.2" fill="none"/></svg></div>
+                  <div>
+                    <p class="rules-block__heading cinzel">Emotional Scope</p>
+                    <p class="rules-block__text jost">Know the difference between fantasy, connection, and reality.</p>
+                    <p class="rules-block__text jost">This service is not therapy, crisis support, or emotional dependency training.</p>
+                    <p class="rules-block__note cormorant gold-gradient-text">Self-awareness is important.</p>
+                  </div>
+                </div>
+                
+                <div class="rules-block">
+                  <div class="icon-circle"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10,3 L17,10 L10,17 L3,10 Z" stroke="#D4AF37" stroke-width="1.2" fill="none"/></svg></div>
+                  <div>
+                    <p class="rules-block__heading cinzel">Quality of Effort</p>
+                    <p class="rules-block__text jost">Strong applications show consistency, composure, honesty, and attention to detail.</p>
+                    <p class="rules-block__note cormorant gold-gradient-text">Low-effort applications are unlikely to be accepted.</p>
+                  </div>
+                </div>
+                
+                <div class="rules-block">
+                  <div class="icon-circle"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4,17 L7,7 L10,12 L13,7 L16,17 Z" stroke="#D4AF37" stroke-width="1.2" fill="none"/><circle cx="10" cy="5" r="1.5" stroke="#D4AF37" stroke-width="1"/></svg></div>
+                  <div>
+                    <p class="rules-block__heading cinzel">Access Review</p>
+                    <p class="rules-block__text jost">The Soft Command may decline, pause, or end any interaction that does not fit the standard.</p>
+                    <p class="rules-block__note cormorant gold-gradient-text">Access is selective, not automatic.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="slide-illustration-aside">
+                <div class="illustration-circle illustration-circle--sm">
+                  <img src="Images/Logo/logo-no-text.png" alt="" class="slide-illustration slide-illustration--emblem" aria-hidden="true"/>
+                </div>
+              </div>
+            </div>
+            
+            <div class="acknowledgment-box reveal">
+              <p class="cinzel acknowledgment-box__label">Before Applying</p>
+              <p class="cormorant gold-gradient-text acknowledgment-box__text">
+                Continuing to the application means you understand the access standard, privacy expectations, boundaries, and selective review process.
+              </p>
+              <a href="contact.html" class="btn btn--primary cinzel acknowledgment-box__cta">Apply With Respect</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      </div>
+      
+      <!-- Carousel Navigation -->
+      <div class="carousel-nav">
+        <button class="carousel-btn carousel-btn--prev cinzel" id="rules-prev" aria-label="Previous slide">← Prev</button>
+        <div class="carousel-dots" id="carousel-dots">
+          <button class="dot dot--active" data-slide="0" aria-label="Slide 1"></button>
+          <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+          <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+        </div>
+        <button class="carousel-btn carousel-btn--next cinzel" id="rules-next" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-kicker cinzel">The Soft Command</p>
+        <p class="footer-logo cormorant gold-gradient-text">Goddess Selina</p>
+        <p class="footer-tagline jost">Your new obsession begins softly.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="rules.html" data-i18n="nav_rules" class="cinzel footer-link">Rules</a>
+        <a href="services.html" data-i18n="nav_services" class="cinzel footer-link">Services</a>
+        <a href="tributes.html" data-i18n="nav_tributes" class="cinzel footer-link">Tributes</a>
+        <a href="contact.html" data-i18n="nav_contact" class="cinzel footer-link">Apply</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/the.soft.command/" target="_blank" rel="noopener" class="social-link cinzel" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+          </svg>
+          <span>@the.soft.command</span>
+        </a>
+      </div>
+      <div class="footer-payments">
+        <span class="cinzel payment-label">Discreet tributes via</span>
+        <span class="payment-badge cinzel">PayPal</span>
+        <span class="payment-badge cinzel">CashApp</span>
+        <span class="payment-badge cinzel">Venmo</span>
+      </div>
+      <a href="contact.html" class="btn btn--ghost cinzel footer-cta">Apply With Respect</a>
+      <p class="footer-copy jost">© 2025 The Soft Command. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <svg id="marble-veins" class="marble-veins" viewBox="0 0 1000 1000" 
+       preserveAspectRatio="xMidYMid slice"
+       xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <defs>
+      <linearGradient id="veinGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F9F295" stop-opacity="0"/>
+        <stop offset="30%" stop-color="#D4AF37" stop-opacity="0.9">
+          <animate attributeName="offset" values="0.2;0.8;0.2" dur="6s" repeatCount="indefinite"/>
+        </stop>
+        <stop offset="60%" stop-color="#F9F295" stop-opacity="0.6">
+          <animate attributeName="offset" values="0.5;1.0;0.5" dur="6s" repeatCount="indefinite"/>
+        </stop>
+        <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+      </linearGradient>
+      <filter id="veinBlur">
+        <feGaussianBlur stdDeviation="0.8"/>
+      </filter>
+    </defs>
+    
+    <g class="vein-group vein-primary">
+      <path d="M0,180 Q150,160 280,200 T520,170 Q680,145 750,220 T1000,190" 
+            stroke="url(#veinGlow)" stroke-width="1.5" fill="none" filter="url(#veinBlur)"/>
+      <path d="M0,450 Q200,420 350,480 T600,440 Q800,410 900,470 T1000,450"
+            stroke="url(#veinGlow)" stroke-width="1.2" fill="none" filter="url(#veinBlur)"/>
+      <path d="M0,720 Q180,700 300,740 Q450,780 550,720 T800,730 Q900,740 1000,710"
+            stroke="url(#veinGlow)" stroke-width="1.8" fill="none" filter="url(#veinBlur)"/>
+    </g>
+    
+    <g class="vein-group vein-secondary">
+      <path d="M120,0 Q140,150 100,300 Q80,400 130,520 T110,700 Q100,850 140,1000"
+            stroke="#D4AF37" stroke-width="0.6" fill="none" opacity="0.5"/>
+      <path d="M380,0 Q400,200 360,380 Q340,500 390,620 T370,800 Q360,900 400,1000"
+            stroke="#D4AF37" stroke-width="0.4" fill="none" opacity="0.35"/>
+      <path d="M650,0 Q680,180 640,360 T670,580 Q690,720 650,900 T680,1000"
+            stroke="#F9F295" stroke-width="0.5" fill="none" opacity="0.4"/>
+      <path d="M850,0 Q870,200 830,380 T860,600 Q880,780 840,1000"
+            stroke="#D4AF37" stroke-width="0.7" fill="none" opacity="0.45"/>
+    </g>
+    
+    <g class="vein-group vein-micro">
+      <path d="M200,180 Q250,210 280,195 T320,215" stroke="#F9F295" stroke-width="0.3" fill="none" opacity="0.3"/>
+      <path d="M520,450 Q580,435 620,460 T680,445" stroke="#D4AF37" stroke-width="0.3" fill="none" opacity="0.25"/>
+      <path d="M100,720 Q160,705 190,730 T230,715" stroke="#F9F295" stroke-width="0.25" fill="none" opacity="0.3"/>
+      <path d="M740,300 Q800,285 830,310 T880,295" stroke="#D4AF37" stroke-width="0.3" fill="none" opacity="0.2"/>
+    </g>
+  </svg>
+  
+  <style>
+    body.marble-bg #marble-veins {
+      display: block !important;
+    }
+  </style>
+</body>
+</html>

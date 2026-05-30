@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="noir">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | The Soft Command</title>
+  <meta name="description" content="The Soft Command service menu: voice notes, custom content, calls, training, and accountability.">
+  <meta name="theme-color" content="#080808">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/calculator.js" defer></script>
+</head>
+<body>
+  <!-- Global Navigation -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo nav-logo--wordmark" aria-label="Goddess Selina, The Soft Command">
+        <span class="nav-name cormorant gold-gradient-text">Goddess Selina</span>
+        <span class="nav-motto cinzel">Your new obsession.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home" class="cinzel nav-link">Home</a></li>
+        <li><a href="rules.html" data-i18n="nav_rules" class="cinzel nav-link">Rules</a></li>
+        <li><a href="services.html" data-i18n="nav_services" class="cinzel nav-link">Services</a></li>
+        <li><a href="tributes.html" data-i18n="nav_tributes" class="cinzel nav-link">Tributes</a></li>
+        <li><a href="gallery.html" data-i18n="nav_gallery" class="cinzel nav-link">Gallery</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact" class="cinzel nav-link nav-link--cta">Apply</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="lang-selector" id="lang-selector">
+          <button class="lang-btn cinzel" id="lang-toggle-btn">EN ▾</button>
+          <div class="lang-dropdown" id="lang-dropdown" hidden>
+            <button data-lang="en" class="cinzel">EN</button>
+            <button data-lang="fr" class="cinzel">FR</button>
+            <button data-lang="de" class="cinzel">DE</button>
+            <button data-lang="es" class="cinzel">ES</button>
+          </div>
+        </div>
+        <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle theme"><span class="theme-icon">◑</span></button>
+        <button id="hamburger" class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <button class="mobile-menu__close" id="mobile-close">✕</button>
+    <nav class="mobile-menu__nav">
+      <a href="index.html" data-i18n="nav_home" class="cinzel mobile-link">Home</a>
+      <a href="rules.html" data-i18n="nav_rules" class="cinzel mobile-link">Rules</a>
+      <a href="services.html" data-i18n="nav_services" class="cinzel mobile-link">Services</a>
+      <a href="tributes.html" data-i18n="nav_tributes" class="cinzel mobile-link">Tributes</a>
+      <a href="gallery.html" data-i18n="nav_gallery" class="cinzel mobile-link">Gallery</a>
+      <a href="contact.html" data-i18n="nav_contact" class="cinzel mobile-link mobile-link--cta">Apply</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <p class="cinzel gold-gradient-text" data-i18n="footer_tagline">Obey gently.</p>
+    </div>
+  </div>
+
+  <main class="services-page">
+    <section class="hero hero--small">
+      <p class="section-eyebrow cinzel gold-gradient-text" data-i18n="services_eyebrow">The Menu</p>
+      <h1 class="page-title cormorant gold-gradient-text" data-i18n="services_title">What I Offer</h1>
+    </section>
+
+    <section class="menu-section">
+      <div class="menu-intro reveal">
+        <p class="menu-kicker cormorant gold-gradient-text">PRICE LIST AVAILABLE ON REQUEST</p>
+        <p class="jost">
+          <strong>Services include:</strong> Custom content • Voice notes • Video messages • Calls • Training • Accountability • Tasks • Devotional dynamics • Long-term arrangements
+        </p>
+        <p class="jost">
+          Send an introduction and your interests for current pricing and availability.
+        </p>
+        <p class="jost">
+          Not all requests are accepted. Respect and compatibility matter.
+        </p>
+      </div>
+
+      <div class="service-spotlight reveal">
+        <div class="service-spotlight__copy">
+          <p class="editorial-kicker cinzel">Measured Control</p>
+          <h2 class="service-spotlight__title cormorant gold-gradient-text">Direction, delivered softly.</h2>
+          <p class="jost">The best requests arrive composed: clear desire, clean boundaries, and enough restraint to be guided.</p>
+        </div>
+        <figure class="service-spotlight__art">
+          <img src="Images/Showcase/selina-chain-command.webp" alt="Goddess Selina holding a chain in a gold oval frame" width="475" height="720" loading="lazy" decoding="async">
+        </figure>
+      </div>
+
+      <h2 class="section-title section-title--center cormorant gold-gradient-text reveal">Current Menu</h2>
+
+      <div class="menu-grid stagger-children">
+        <!-- Voice Note -->
+        <article class="menu-card">
+          <div class="menu-card__header">
+            <h3 class="menu-card__title cinzel">Voice Note</h3>
+          </div>
+          <div class="menu-card__options jost">
+            <div class="menu-option">
+              <span class="menu-option__name">2-3 mins</span>
+              <span class="menu-option__price">$15</span>
+            </div>
+            <div class="menu-option">
+              <span class="menu-option__name">5-10 mins</span>
+              <span class="menu-option__price">$30</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Custom Photo -->
+        <article class="menu-card">
+          <div class="menu-card__header">
+            <h3 class="menu-card__title cinzel">Custom Photo</h3>
+          </div>
+          <div class="menu-card__options jost">
+            <div class="menu-option">
+              <span class="menu-option__name">Single photo</span>
+              <span class="menu-option__price">$10</span>
+            </div>
+            <div class="menu-option">
+              <span class="menu-option__name">Set of 5</span>
+              <span class="menu-option__price">$40</span>
+            </div>
+            <div class="menu-option">
+              <span class="menu-option__name">Set of 10</span>
+              <span class="menu-option__price">$75</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Custom Video -->
+        <article class="menu-card">
+          <div class="menu-card__header">
+            <h3 class="menu-card__title cinzel">Custom Video</h3>
+          </div>
+          <div class="menu-card__options jost">
+            <div class="menu-option">
+              <span class="menu-option__name">1 minute</span>
+              <span class="menu-option__price">$25</span>
+            </div>
+            <div class="menu-option">
+              <span class="menu-option__name">3 minutes</span>
+              <span class="menu-option__price">$60</span>
+            </div>
+            <div class="menu-option">
+              <span class="menu-option__name">5 minutes</span>
+              <span class="menu-option__price">$90</span>
+            </div>
+            <div class="menu-option">
+              <span class="menu-option__name">10 minutes</span>
+              <span class="menu-option__price">$150</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Messages -->
+        <article class="menu-card">
+          <div class="menu-card__header">
+            <h3 class="menu-card__title cinzel">Messages</h3>
+            <p class="menu-card__desc">Good Morning / Good Night Messages</p>
+          </div>
+          <div class="menu-card__options jost">
+            <div class="menu-option">
+              <span class="menu-option__name">1 week</span>
+              <span class="menu-option__price">$25</span>
+            </div>
+            <div class="menu-option">
+              <span class="menu-option__name">1 month</span>
+              <span class="menu-option__price">$80</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Task & Accountability -->
+        <article class="menu-card">
+          <div class="menu-card__header">
+            <h3 class="menu-card__title cinzel">Task & Accountability</h3>
+          </div>
+          <div class="menu-card__options jost">
+            <div class="menu-option">
+              <span class="menu-option__name">Daily task package (3 days)</span>
+              <span class="menu-option__price">$30</span>
+            </div>
+            <div class="menu-option">
+              <span class="menu-option__name">Weekly accountability package</span>
+              <span class="menu-option__price">$75</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Live Calls -->
+        <article class="menu-card">
+          <div class="menu-card__header">
+            <h3 class="menu-card__title cinzel">Live Calls</h3>
+          </div>
+          <div class="menu-card__options jost">
+            <div class="menu-option">
+              <span class="menu-option__name">Voice Call (15 mins)</span>
+              <span class="menu-option__price">$40</span>
+            </div>
+            <div class="menu-option">
+              <span class="menu-option__name">Voice Call (30 mins)</span>
+              <span class="menu-option__price">$75</span>
+            </div>
+            <div class="menu-option">
+              <span class="menu-option__name">Video Call (15 mins)</span>
+              <span class="menu-option__price">$60</span>
+            </div>
+            <div class="menu-option">
+              <span class="menu-option__name">Video Call (30 mins)</span>
+              <span class="menu-option__price">$120</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Custom Requests -->
+        <article class="menu-card menu-card--wide menu-card--center">
+          <div class="menu-card__header menu-card__header--plain">
+            <h3 class="menu-card__title cinzel">Custom Requests</h3>
+            <p class="menu-card__desc menu-card__desc--large">Quoted individually depending on complexity.</p>
+          </div>
+          <a href="contact.html" class="btn btn--primary cinzel">Inquire Now</a>
+        </article>
+      </div>
+
+      <div class="menu-disclaimer reveal">
+        <p>Payment does not guarantee unlimited access, ownership, exclusivity, or instant responses.</p>
+        <p>Respectful communication is expected at all times.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-kicker cinzel">The Soft Command</p>
+        <p class="footer-logo cormorant gold-gradient-text">Goddess Selina</p>
+        <p class="footer-tagline jost">Your new obsession begins softly.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="rules.html" data-i18n="nav_rules" class="cinzel footer-link">Rules</a>
+        <a href="services.html" data-i18n="nav_services" class="cinzel footer-link">Services</a>
+        <a href="tributes.html" data-i18n="nav_tributes" class="cinzel footer-link">Tributes</a>
+        <a href="contact.html" data-i18n="nav_contact" class="cinzel footer-link">Apply</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/the.soft.command/" target="_blank" rel="noopener" class="social-link cinzel" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+          </svg>
+          <span>@the.soft.command</span>
+        </a>
+      </div>
+      <div class="footer-payments">
+        <span class="cinzel payment-label">Discreet tributes via</span>
+        <span class="payment-badge cinzel">PayPal</span>
+        <span class="payment-badge cinzel">CashApp</span>
+        <span class="payment-badge cinzel">Venmo</span>
+      </div>
+      <a href="contact.html" class="btn btn--ghost cinzel footer-cta">Apply With Respect</a>
+      <p class="footer-copy jost">© 2025 The Soft Command. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <svg id="marble-veins" class="marble-veins" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!-- Veins definition here (shortened for brevity since it's just scaffolding) -->
+    <style>body.marble-bg #marble-veins { display: block !important; }</style>
+  </svg>
+</body>
+</html>

@@ -85,13 +85,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  let navScrolled = window.scrollY > 50;
+  let scrollTicking = false;
+  let scrollIdleTimer;
+  if (mainNav) mainNav.classList.toggle('scrolled', navScrolled);
+
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      mainNav?.classList.add('scrolled');
-    } else {
-      mainNav?.classList.remove('scrolled');
+    document.body.classList.add('is-scrolling');
+    window.clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = window.setTimeout(() => {
+      document.body.classList.remove('is-scrolling');
+    }, 140);
+
+    if (!scrollTicking) {
+      window.requestAnimationFrame(() => {
+        const shouldBeScrolled = window.scrollY > 50;
+        if (shouldBeScrolled !== navScrolled) {
+          navScrolled = shouldBeScrolled;
+          mainNav?.classList.toggle('scrolled', navScrolled);
+        }
+        scrollTicking = false;
+      });
+      scrollTicking = true;
     }
-  });
+  }, { passive: true });
 
   if (hamburger && mobileMenu && mobileClose) {
     const openMenu = () => {
@@ -176,6 +193,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = canvas.getContext('2d');
     const particles = [];
     let animId;
+    let running = false;
+    let lastFrame = 0;
+    const isCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+    const frameInterval = isCoarsePointer ? 1000 / 30 : 1000 / 60;
+    const particleCount = isCoarsePointer ? 42 : 60;
 
     function resize() {
       canvas.width = window.innerWidth;
@@ -184,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resize();
     window.addEventListener('resize', resize);
 
-    for (let i = 0; i < 60; i++) {
+    for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -196,7 +218,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    function draw() {
+    function draw(now = 0) {
+      if (!running) return;
+      if (now - lastFrame < frameInterval) {
+        animId = requestAnimationFrame(draw);
+        return;
+      }
+      lastFrame = now;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       const color = '#D4AF37'; // Gold for both themes
       particles.forEach(p => {
@@ -218,14 +246,36 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!document.hidden) animId = requestAnimationFrame(draw);
     }
 
+    function startCanvas() {
+      if (running) return;
+      running = true;
+      animId = requestAnimationFrame(draw);
+    }
+
+    function stopCanvas() {
+      running = false;
+      cancelAnimationFrame(animId);
+    }
+
     const heroObserver = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting) { draw(); } 
-      else { cancelAnimationFrame(animId); }
+      if (e.isIntersecting && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        startCanvas();
+      } else {
+        stopCanvas();
+      }
     });
     heroObserver.observe(document.getElementById('hero'));
 
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        stopCanvas();
+      } else if (document.getElementById('hero')?.getBoundingClientRect().bottom > 0) {
+        startCanvas();
+      }
+    });
+
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      draw();
+      startCanvas();
     }
   }
 

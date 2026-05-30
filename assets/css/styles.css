@@ -2371,6 +2371,43 @@ section:not(.hero) {
   display: block !important;
 }
 
+/* Performance layer: preserve the look, reduce live work during touch scroll. */
+body.is-scrolling .gold-gradient-text,
+body.is-scrolling .hero-gradient-pulse,
+body.is-scrolling .scroll-line::after,
+body.is-scrolling .selina-cameo::after,
+body.is-scrolling .vein-primary,
+body.is-scrolling .vein-secondary,
+body.is-scrolling .vein-micro,
+body.is-scrolling.marble-bg::before {
+  animation-play-state: paused !important;
+}
+
+#hero-canvas,
+.hero-presence,
+.hero-gradient-pulse,
+#main-nav {
+  transform: translateZ(0);
+}
+
+.hero,
+.site-footer,
+.stats-section,
+.menu-intro,
+.daily-quote-frame,
+.rule-slide__content,
+.menu-card,
+.tribute-card,
+.teaser-card,
+.gallery-card,
+.editorial-panel,
+.gallery-note,
+.service-spotlight,
+.tribute-ritual,
+.contact-side-card {
+  contain: layout paint;
+}
+
 @media (min-width: 640px) {
   .btn {
     padding-inline: 1.8rem;
@@ -2418,6 +2455,24 @@ section:not(.hero) {
 }
 
 @media (max-width: 768px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    touch-action: pan-y;
+  }
+
+  section:not(.hero),
+  .site-footer {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 720px;
+  }
+
+  .marble-bg::before {
+    animation-duration: 70s;
+  }
+
   #main-nav {
     padding-inline: 0.75rem;
   }
@@ -2428,6 +2483,11 @@ section:not(.hero) {
 
   .nav-controls {
     gap: 0.45rem;
+  }
+
+  #main-nav.scrolled {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 
   .logo-text {
@@ -2613,6 +2673,24 @@ section:not(.hero) {
   .tribute-card,
   .teaser-card {
     padding: 1.4rem;
+  }
+
+  body.is-scrolling .stats-section,
+  body.is-scrolling .menu-intro,
+  body.is-scrolling .daily-quote-frame,
+  body.is-scrolling .rule-slide__content,
+  body.is-scrolling .menu-card,
+  body.is-scrolling .tribute-card,
+  body.is-scrolling .teaser-card,
+  body.is-scrolling .gallery-card,
+  body.is-scrolling .editorial-panel,
+  body.is-scrolling .gallery-note,
+  body.is-scrolling .service-spotlight,
+  body.is-scrolling .tribute-ritual,
+  body.is-scrolling .form-wrapper,
+  body.is-scrolling .contact-side-card {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 }
 
